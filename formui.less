@@ -1,0 +1,174 @@
+.lincoapp-formui{
+    @red:      #a94542;
+    @gray:     #cccccc;
+    @blue:     #0e8dfd;
+    @green:    #3a783c;
+    @highlight:#4198e4;
+
+    font-size: 14px;
+
+    .form-title{
+        display: block;
+        line-height: 2.3;
+    }
+
+    .form-group{
+        margin-bottom: 6px;
+    }
+
+    .form-item,
+    .form-area{
+        width: 100%;
+        font-size: 14px;
+        padding: 0 8px;
+        border-radius: 2px;
+        box-sizing: border-box;
+        border: 1px solid #cccccc;
+        resize: none;
+        outline: 0;
+
+        &.error{
+            border-color: @red;
+        }
+
+        &.success{
+            border-color: @green;
+        }
+
+        &:focus{
+            border-color: @highlight;
+        }
+    }
+
+    .form-item{
+        height: 34px;
+    }
+
+    .form-area{
+        height: 90px;
+        padding: 6px 8px;
+    }
+
+    .form-msg{
+        color: @red;
+        line-height: 2;
+        font-size: 12px;
+    }
+
+    .form-btn{
+        height: 36px;
+        line-height: 36px;
+        font-size: 16px;
+        border-radius: 3px;
+        padding: 0 20px;
+
+        &.skin-red{
+            color: #fff;
+            background-color: @red;
+        }
+
+        &.skin-blue{
+            color: #fff;
+            background-color: @blue;
+        }
+
+        &.skin-green{
+            color: #fff;
+            background-color: @green;
+        }
+
+        &.skin-full{
+            display: block;
+            width: 100%;
+            .box-sizing();
+        }
+    }
+
+    .caret{
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        margin-top: -2px;
+        display: inline-block;
+        width: 0;
+        height: 0;
+        margin-left: 2px;
+        vertical-align: middle;
+        border-top: 4px dashed;
+        border-top: 4px solid \9;
+        border-right: 4px solid transparent;
+        border-left: 4px solid transparent;
+    }
+
+    .form-ui-tag{
+        @height: 26px;
+
+        .tags{
+            margin-top: 12px;
+            overflow: hidden;
+        }
+
+        .tag{
+            float: left;
+
+            &.selected{
+                color: #fff;
+                background: @blue;
+            }
+        }
+
+        i{
+            display: inline-block;
+            min-width: 10px;
+            height: @height;
+            line-height: @height;
+            font-size: 14px;
+            font-style: normal;
+            padding: 0 8px;
+            border: 1px solid #ddd;
+            border-radius: @height/2;
+            overflow: hidden;
+            margin-right: 6px;
+            text-align: center;
+            cursor: default;
+            -webkit-user-select: none;
+        }
+    }
+
+    .form-ui-slide{
+        display: block;
+        width: 60px;
+        height: 20px;
+        padding: 1px;
+        padding-right: 24px;
+        border-radius: 1px;
+        background: #d4d4d4;
+        overflow: hidden;
+        .box-sizing();
+
+        .slideBtn{
+            display: block;
+            min-width: 36px;
+            padding: 0 4px;
+            font-size: 12px;
+            height: 100%;
+            line-height: 18px;
+            border-radius: 1px;
+            background: #fff;
+        }
+
+        &.selected{
+            background: #1b95fb;
+            padding-left: 23px;
+            padding-right: 1px;
+
+            .slideBtn{
+                color: #1b95fb;
+            }
+        }
+
+        &.animate{
+            transition: all 150ms ease;
+        }
+    }
+}

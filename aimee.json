@@ -1,0 +1,17 @@
+{
+  "name": "formui",
+  "version": "1.0.0",
+  "description": "formui, 表单UI",
+  "author": "gavinning",
+  "keywords": [
+    "form",
+    "formui",
+    "form-ui",
+    "form ui"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aimeejs/formui.git",
+    "bugs": "https:/github.com/aimeejs/formui/issues"
+  }
+}
